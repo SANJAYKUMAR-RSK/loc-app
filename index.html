@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location</title>
+</head>
+<body>
+    <div id="loci">
+        <h1 id="lat"></h1>
+        <h1 id="long"></h1>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        // Trigger the permission request on a user interaction event
+        document.addEventListener('DOMContentLoaded', function () {
+            document.body.addEventListener('click', function () {
+                update();
+            });
+        });
+    </script>
+</body>
+</html>
